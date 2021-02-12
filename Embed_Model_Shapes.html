@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<title>DM - Model Shapes</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://caraya.github.io/model-viewer-demo/js/model-viewer-legacy.js"></script>
+<link rel="stylesheet" href="./assets/css/table.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <style>
+		*{
+		margin:0;
+		padding:0;
+		}
+		html{
+		height: 100%;
+		width: 100%;
+		}
+		body {
+		  height: 100%;
+		  width: 100%;
+		}
+		model-viewer{
+		height:100%;
+		width:100%;
+		}
+
+
+    </style>
+</head>
+
+<body>
+  <model-viewer src="https://raw.githubusercontent.com/PancakeBoiii/WebSidePortfolio/main/models/Shapes.glb" camera-controls shadow-intensity="1">
+
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+      </div>
+  </model-viewer>
+
+</body>
+</html>
